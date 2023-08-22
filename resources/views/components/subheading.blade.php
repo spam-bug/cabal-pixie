@@ -1,0 +1,1 @@
+<h2 {{ $attributes->class(['text-xl font-semibold text-gray-700']) }}>{{ $slot }}</h2>
