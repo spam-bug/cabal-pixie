@@ -64,7 +64,7 @@
                 href="#" 
                 @class([
                     'select-none flex items-center gap-2 p-2 text-lg font-medium text-gray-700 transition-colors duration-300 ease-in-out rounded outline-none focus:bg-gray-100 hover:bg-gray-100',
-                    'bg-orange-500 text-white hover:bg-orange-400 focus:bg-orange-400' => $isActive('ability'),
+                    'bg-orange-500 text-white hover:bg-orange-400 focus:bg-orange-400' => $isActive('abilities'),
                 ])
             >
                 <x-icons.sprint />

@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'web'),
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,6 @@ return [
 
         'account' => [
             'driver' => 'sqlsrv',
-            'url' => env('ACCOUNT_DATABASE_URL'),
             'host' => env('ACCOUNT_DB_HOST', 'localhost'),
             'port' => env('ACCOUNT_DB_PORT', '1433'),
             'database' => env('ACCOUNT_DB_DATABASE', 'forge'),
@@ -89,13 +88,10 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
-            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
         'authentication' => [
             'driver' => 'sqlsrv',
-            'url' => env('AUTHENTICATION_DATABASE_URL'),
             'host' => env('AUTHENTICATION_DB_HOST', 'localhost'),
             'port' => env('AUTHENTICATION_DB_PORT', '1433'),
             'database' => env('AUTHENTICATION_DB_DATABASE', 'forge'),
@@ -104,13 +100,10 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
-            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
         'cabalCash' => [
             'driver' => 'sqlsrv',
-            'url' => env('CABAL_CASH_DATABASE_URL'),
             'host' => env('CABAL_CASH_DB_HOST', 'localhost'),
             'port' => env('CABAL_CASH_DB_PORT', '1433'),
             'database' => env('CABAL_CASH_DB_DATABASE', 'forge'),
@@ -119,13 +112,10 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
-            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
         'cabalGuild' => [
             'driver' => 'sqlsrv',
-            'url' => env('CABAL_GUILD_DATABASE_URL'),
             'host' => env('CABAL_GUILD_DB_HOST', 'localhost'),
             'port' => env('CABAL_GUILD_DB_PORT', '1433'),
             'database' => env('CABAL_GUILD_DB_DATABASE', 'forge'),
@@ -134,13 +124,10 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
-            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
         'netcafeBilling' => [
             'driver' => 'sqlsrv',
-            'url' => env('NETCAFE_BILLING_DATABASE_URL'),
             'host' => env('NETCAFE_BILLING_DB_HOST', 'localhost'),
             'port' => env('NETCAFE_BILLING_DB_PORT', '1433'),
             'database' => env('NETCAFE_BILLING_DB_DATABASE', 'forge'),
@@ -149,13 +136,10 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
-            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
         'eventData' => [
             'driver' => 'sqlsrv',
-            'url' => env('EVENT_DATA_DATABASE_URL'),
             'host' => env('EVENT_DATA_DB_HOST', 'localhost'),
             'port' => env('EVENT_DATA_DB_PORT', '1433'),
             'database' => env('EVENT_DATA_DB_DATABASE', 'forge'),
@@ -164,13 +148,10 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
-            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
         'server01' => [
             'driver' => 'sqlsrv',
-            'url' => env('SERVER01_DB_DATABASE_URL'),
             'host' => env('SERVER01_DB_HOST', 'localhost'),
             'port' => env('SERVER01_DB_PORT', '1433'),
             'database' => env('SERVER01_DB_DATABASE', 'forge'),
@@ -179,13 +160,10 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
-            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
         'web' => [
             'driver' => 'sqlsrv',
-            'url' => env('WEB_DB_DATABASE_URL'),
             'host' => env('WEB_DB_HOST', 'localhost'),
             'port' => env('WEB_DB_PORT', '1433'),
             'database' => env('WEB_DB_DATABASE', 'forge'),
@@ -194,8 +172,6 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
-            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
     ],
 
