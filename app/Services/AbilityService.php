@@ -43,12 +43,9 @@ final class AbilityService
         if (preg_match_all(static::costAbilityItemPattern(), static::abilityContent(), $costAbilityItemMatches)) {
             foreach ($costAbilityItemMatches[0] as $loopIndex => $loopValue) {
                 $abilities[$loopIndex]['item_idx'] = $costAbilityItemMatches[1][$loopIndex];
-
                 $abilityCostContent = $costAbilityItemMatches[2][$loopIndex];
 
                 if (preg_match_all(static::abilityCostPattern(), $abilityCostContent, $abilityCostMatches)) {
-                    $abilityCosts = [];
-
                     foreach ($abilityCostMatches[1] as $match) {
                         $attributes = static::parseAttribute($match);
 
@@ -62,7 +59,6 @@ final class AbilityService
         }
 
         if (preg_match_all(static::valueAbilityItemPattern(), static::abilityContent(), $valueAbilityItemMatches)) {
-
             foreach ($valueAbilityItemMatches[0] as $loopIndex => $loopValue) {
                 $abilities[$loopIndex]['force_code'] = (int) $valueAbilityItemMatches[2][$loopIndex];
                 $abilities[$loopIndex]['value_type'] = (int) $valueAbilityItemMatches[3][$loopIndex];
@@ -71,7 +67,6 @@ final class AbilityService
                 $abilityValueContent = $valueAbilityItemMatches[5][$loopIndex];
 
                 if (preg_match_all(static::abilityValuePattern(), $abilityValueContent, $abilityValueMatches)) {
-                    $abilityValues = [];
                     foreach ($abilityValueMatches[1] as $loopIndex2 => $match) {
                         $attributes = static::parseAttribute($match);
 
@@ -82,7 +77,6 @@ final class AbilityService
                 }
             }
         }
-
 
         return $abilities;
     }
