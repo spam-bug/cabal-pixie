@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Portal\Ability\PassiveAbility;
+use App\Models\Portal\Item\Item;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -17,10 +18,10 @@ return new class extends Migration
             $table->foreignIdFor(PassiveAbility::class);
             $table->integer('level');
             $table->integer('ap');
-            $table->integer('item1_idx');
+            $table->foreignIdFor(Item::class, 'item1_id')->nullable();
             $table->integer('item1_option');
             $table->integer('item1_count');
-            $table->integer('item2_idx');
+            $table->foreignIdFor(Item::class, 'item2_id')->nullable();
             $table->integer('item2_option');
             $table->integer('item2_count');
             $table->integer('force_value');

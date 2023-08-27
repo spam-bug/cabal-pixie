@@ -13,7 +13,7 @@ class ItemPage extends Component
     {
         // ItemDescription::truncate();
         // Item::truncate();
-        // (new ItemService)->seedDatabase();
+        //  (new ItemService)->seedDatabase();
 
         //$item = Item::find(1);
 

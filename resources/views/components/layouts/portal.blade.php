@@ -80,7 +80,7 @@
                 <p class="font-medium text-gray-700">Raymark Peña</p>
             </div>
 
-            <x-button title="Log Out">
+            <x-button theme="light" title="Log Out">
                 <x-icons.logout  />
             </x-button>
         </div>
@@ -94,15 +94,15 @@
             <x-subheading>{{ $pageName }}</x-subheading>
 
             <div class="flex items-center gap-2">      
-                <x-button title="Notifications">
+                <x-button theme="light" title="Notifications">
                     <x-icons.notifications />
                 </x-button>
 
-                <x-button title="Messages">
+                <x-button theme="light" title="Messages">
                     <x-icons.mail />
                 </x-button>
 
-                <x-button title="Toggle sidebar" x-on:click="toggle(!open)">
+                <x-button theme="light" title="Toggle sidebar" x-on:click="toggle(!open)">
                     <x-icons.menu x-show="!open" x-cloak />
                     <x-icons.close x-show="open" x-cloak />
                 </x-button>
